@@ -26,7 +26,7 @@ namespace Project.Core
             userProgressMessage.DisplayMessage = userProgressMessage.SpokenMessage = message;
             VoiceCommandResponse response = VoiceCommandResponse.CreateResponse(userProgressMessage);
             await voiceServiceConnection.ReportProgressAsync(response);
-            return;
+            return;//
         }
 
         public async void SendMessages(string message)
