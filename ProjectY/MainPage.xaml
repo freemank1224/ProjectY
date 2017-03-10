@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="ProjectY.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjectY"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="On" Content="On" Margin="12" Width="50" Click="On_Click"/>
+            <Button VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="OFF" Content="OFF" Margin="12" Width="50" Click="OFF_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Slider x:Name="slider" Width="200" Margin="12" ValueChanged="slider_ValueChanged"></Slider>
+            <TextBlock x:Name="test" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="12" FontSize="30">当前亮度为:</TextBlock>
+        </StackPanel>
+    </StackPanel>
+</Page>

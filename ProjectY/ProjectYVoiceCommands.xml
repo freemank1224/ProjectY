@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="zh-cn" Name="ProjectYCommandSet">
+    <AppName>台灯</AppName>
+  <Example>开灯</Example>
+  
+  <Command Name="On">
+    <Example>把灯打开</Example>
+    <ListenFor>开灯</ListenFor>
+  <ListenFor>把灯打开</ListenFor>
+  <Feedback>正在打开台灯</Feedback>
+    <VoiceCommandService Target="GeneralQueryVoiceCommandService"/>
+  </Command>
+  
+  <Command Name="Off">
+    <Example>把灯关上</Example>
+    <ListenFor>关灯</ListenFor>
+    <ListenFor>把灯关上</ListenFor>
+  <Feedback>正在关闭台灯</Feedback>
+    <VoiceCommandService Target="GeneralQueryVoiceCommandService"/>
+  </Command>
+  
+  <Command Name="Brighter">
+    <Example>把灯调亮一点</Example>
+  <ListenFor>把灯调亮一点</ListenFor>
+   <ListenFor>亮点</ListenFor>
+  <Feedback>正在提高亮度</Feedback>
+    <VoiceCommandService Target="GeneralQueryVoiceCommandService"/>
+  </Command>
+  
+    <Command Name="Darker">
+    <Example>把灯调暗一点</Example>
+  <ListenFor>暗一点</ListenFor>
+      <ListenFor>把灯调暗一点</ListenFor>
+  <Feedback>正在调低亮度</Feedback>
+    <VoiceCommandService Target="GeneralQueryVoiceCommandService"/>
+  </Command>
+  </CommandSet>
+</VoiceCommands>
